@@ -20,6 +20,7 @@ public class ExpenseServiceImpl implements ExpenseService {
         return expenseRepository.save(expense);
     }
 
+    //update the expense
     @Override
     public Expense updateExpense(Long id, Expense updatedExpense) {
         Expense existingExpense = expenseRepository.findById(id)
