@@ -21,7 +21,7 @@ public class ExpenseController {
         Expense createdExpense = expenseService.createExpense(expense);
         return ResponseEntity.ok(createdExpense);
     }
-
+//getting rest ap
     @GetMapping
     public ResponseEntity<List<Expense>> getAllExpenses() {
         List<Expense> expenses = expenseService.getAllExpenses();
